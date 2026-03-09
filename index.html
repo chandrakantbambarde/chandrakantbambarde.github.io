@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎉ℭ𝔥𝔞𝔫𝔡𝔲</title>
+    <title>Chandrakant Bambarde — Java Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-    <!-- Navbar -->
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
     <nav>
         <div class="nav-container">
-            <div class="logo">𝓒𝓫</div>
+            <div class="logo"><span></span> 𝓒𝓓. 𝓓𝓮𝓿</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,83 +27,98 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero" id="home">
+        <div class="hero-bg"></div>
         <div class="hero-container">
             <div class="hero-text">
-                <h1>👋 Hi, I'm Chandrakant Bambarde</h1>
-                <p class="tagline">🎯 Java Full Stack Developer | Spring Boot | REST APIs</p>
-                <p class="description">Building scalable backend systems and clean full-stack applications.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">📄 Download Resume</a>
+                <div class="hero-eyebrow">Available for opportunities</div>
+                <h1 class="hero-name">
+                    Chandrakant
+                    <span class="highlight">Bambarde</span>
+                </h1>
+                <p class="hero-tagline">Java Full Stack Developer · Spring Boot · REST APIs</p>
+                <p class="hero-desc">Building scalable backend systems and clean full-stack applications with a passion for clean, maintainable code.</p>
+                <div class="hero-actions">
+                    <a href="https://drive.google.com/file/d/19uM5jfwdKHARFPues8NOn22rK1MVj-Zn/view?usp=sharing" class="btn btn-primary">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-illustration">
-                    <img src="images/photo.jpeg" alt="Chandrakant" class="hero-photo">
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <img src="images/photo.jpeg" alt="Chandrakant Bambarde" class="hero-photo">
+                    </div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Open to Work
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-
-            <div class="about-box">
-                <p>
-                    Computer Science graduate with a strong foundation in Java Full Stack Development, specializing in
-                    building robust backend systems using Spring Boot and REST APIs. Experienced in designing and
-                    managing MySQL databases with a solid grasp of OOP principles. Skilled in writing clean, efficient,
-                    and maintainable code, with hands-on internship experience in backend development. Actively seeking
-                    entry-level Full Stack or Backend Developer roles to contribute to scalable applications and grow as
-                    a professional software developer.
-                </p>
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Who I Am</h2>
+            <div class="about-box fade-up">
+                <p>Computer Science graduate with a strong foundation in Java Full Stack Development, specializing in building robust backend systems using Spring Boot and REST APIs. Experienced in designing and managing MySQL databases with a solid grasp of OOP principles. Skilled in writing clean, efficient, and maintainable code, with hands-on internship experience in backend development. Actively seeking entry-level Full Stack or Backend Developer roles to contribute to scalable applications and grow as a professional software developer.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">4+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">1+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">2024</span>
+                        <span class="stat-label">CS Graduate</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Skills Section -->
+    <!-- SKILLS -->
     <section id="skills">
-        <div class="container skills-container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="skills-intro">Specialized in building robust backend systems with modern web technologies</p>
-
+        <div class="container">
+            <div class="section-label">Technical Skills</div>
+            <h2 class="section-title">What I Work With</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><span class="skill-icon"></span>Backend Skills</h3>
+                <div class="skill-category fade-up">
+                    <h3>Backend</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Spring Boot</span>
                         <span class="skill-tag">REST APIs</span>
                         <span class="skill-tag">Hibernate/JPA</span>
                         <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">JWT</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><span class="skill-icon"></span>Frontend Skills</h3>
+                <div class="skill-category fade-up">
+                    <h3>Frontend</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Angular 17</span>
                         <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">Responsive Design</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><span class="skill-icon"></span>Database</h3>
+                <div class="skill-category fade-up">
+                    <h3>Database</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">SQL Queries</span>
@@ -107,44 +126,66 @@
                         <span class="skill-tag">JDBC</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><span class="skill-icon"></span>Tools & Platforms</h3>
+                <div class="skill-category fade-up">
+                    <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">CI/CD</span>
                         <span class="skill-tag">GitHub</span>
                         <span class="skill-tag">Postman</span>
                         <span class="skill-tag">IntelliJ IDEA</span>
-                        <span class="skill-tag">Visual Studio</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Apache Tika</span>
+                        <span class="skill-tag">Gemini AI</span>
                     </div>
                 </div>
             </div>
-
             <div class="skills-highlight">
                 <h3>💡 Core Competencies</h3>
-                <p>Strong foundation in Object-Oriented Programming, Data Structures, and Algorithms</p>
-                <div class="tech-stack-badges">
-                    <span class="tech-badge">Java 8+</span>
+                <p>Strong foundation in Object-Oriented Programming, Data Structures & Algorithms</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">Java 17+</span>
                     <span class="tech-badge">Spring Framework</span>
                     <span class="tech-badge">RESTful APIs</span>
+                    <span class="tech-badge">Angular 17</span>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Projects Section -->
+    <!-- PROJECTS -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-label">Projects</div>
+            <h2 class="section-title">What I've Built</h2>
             <div class="projects-grid">
-                <div class="project-card">
+
+                <div class="project-card fade-up featured-project">
+                    <div class="project-number">01</div>
+                    <div class="ai-badge">✦ AI-Powered</div>
                     <div class="project-header">
-                        <h3>Hospital Management System</h3>
-                        <p class="project-tech">Spring Boot | REST API | MySQL | HTML | CSS | JS</p>
+                        <h3>ATS Resume Analyzer</h3>
+                        <p class="project-tech">Java 17 · Spring Boot · Angular 17 · MySQL · JWT · Spring Security · Apache Tika · Gemini AI</p>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Architected an AI-powered full-stack platform integrating <strong>Gemini AI</strong> to analyze resumes against job descriptions, delivering ATS compatibility scoring for <strong>500+ resumes</strong> with sub-3-second response time</li>
+                            <li>Engineered RESTful APIs using Spring Boot & Spring Security for resume parsing, keyword extraction, and automated scoring — reducing manual screening time by <strong>70%</strong></li>
+                            <li>Implemented secure <strong>JWT-based authentication</strong> with role-based access control and built an interactive Angular dashboard with real-time analytics and history tracking</li>
+                            <li>Optimized MySQL schema handling <strong>1,000+ records</strong>; integrated Apache Tika for PDF extraction supporting documents up to 10MB</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/chandrakantbambarde/ats-resume-analyzer.git">→ GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up">
+                    <div class="project-number">02</div>
+                    <div class="project-header">
+                        <h3>Hospital Management System</h3> 
+                        <p class="project-tech">Spring Boot · REST API · MySQL · HTML · CSS · JS</p>
                     </div>
                     <div class="project-body">
                         <ul>
@@ -154,16 +195,17 @@
                             <li>Applied layered architecture for clean and maintainable code</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/chandrakantbambarde/YOUR_HMS_REPO">🔗 GitHub</a>
-                            <a href="https://hospital-chandu.onrender.com/">🌐 Live Demo</a>
+                            <a href="https://github.com/chandrakantbambarde/hospital-management-system.git">→ GitHub</a>
+                            <a href="https://hospital-chandu.onrender.com/">→ Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card fade-up">
+                    <div class="project-number">03</div>
                     <div class="project-header">
-                        <h3>Logistics Delivery Management System</h3>
-                        <p class="project-tech">Spring Boot | REST API | MySQL | HTML | CSS | JS</p>
+                        <h3>Logistics Delivery Management</h3>
+                        <p class="project-tech">Spring Boot · REST API · MySQL · HTML · CSS · JS</p>
                     </div>
                     <div class="project-body">
                         <ul>
@@ -172,16 +214,17 @@
                             <li>Implemented CRUD operations with Spring Boot</li>
                         </ul>
                         <div class="project-links">
-                            <a href="#">🔗 GitHub</a>
-                            <a href="#">🌐 Live Demo</a>
+                            <a href="#">→ GitHub</a>
+                            <a href="#">→ Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card fade-up">
+                    <div class="project-number">04</div>
                     <div class="project-header">
                         <h3>Online Voting System</h3>
-                        <p class="project-tech">Java | Spring Boot | MySQL</p>
+                        <p class="project-tech">Java · Spring Boot · MySQL</p>
                     </div>
                     <div class="project-body">
                         <ul>
@@ -190,24 +233,27 @@
                             <li>Implemented secure user authentication</li>
                         </ul>
                         <div class="project-links">
-                            <a href="#">🔗GitHub</a>
+                            <a href="#">→ GitHub</a>
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- EXPERIENCE -->
     <section id="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-card">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Where I've Worked</h2>
+            <div class="experience-card fade-up">
                 <div class="experience-header">
-                    <h3>Java Developer Intern</h3>
-                    <p class="company">Giri's Tech Hub</p>
+                    <div>
+                        <h3>Java Developer Intern</h3>
+                        <p class="company">Giri's Tech Hub</p>
+                    </div>
+                    <span class="exp-badge">Internship</span>
                 </div>
                 <div class="experience-body">
                     <ul>
@@ -221,77 +267,75 @@
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- EDUCATION -->
     <section id="education">
         <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
+            <div class="section-label">Education</div>
+            <h2 class="section-title">Academic Background</h2>
             <div class="education-grid">
-                <div class="education-card">
+                <div class="education-card fade-up">
                     <h3>Education</h3>
                     <p><strong>Bachelor of Computer Science</strong></p>
                     <p>Shivchhatrapati College</p>
                     <p>Chhatrapati Sambhajinagar</p>
                     <p>Graduated: 2024</p>
                 </div>
-                <div class="education-card">
+                <div class="education-card fade-up">
                     <h3>Certifications</h3>
                     <ul class="cert-list">
-                        <li>Spring Boot Certification<br><small>Infosys Springboard</small></li>
+                        <li>
+                            Spring Boot Certification
+                            <small>Infosys Springboard</small>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="contact-subtitle">I'm open to entry-level Full Stack / Java Developer opportunities</p>
-
-                <div class="contact-info">
-                    <div class="contact-item">
+                <p class="contact-subtitle">Open to entry-level Full Stack & Java Developer opportunities</p>
+                <div class="contact-grid">
+                    <div class="contact-item fade-up">
                         <div class="icon-circle">
                             <img src="icon/Gmail.png" alt="Gmail">
                         </div>
-                        <div class="contact-label"></div>
-                        <a href="mailto:chandrakanrbambarde@gmail.com">Email</a>
+                        <a href="mailto:chandrakantbambarde@gmail.com">Email Me</a>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item fade-up">
                         <div class="icon-circle">
-                            <img src="icon/Linkedin.png" alt="Gmail">
+                            <img src="icon/Linkedin.png" alt="LinkedIn">
                         </div>
-                        <div class="contact-label"></div>
                         <a href="https://linkedin.com/chandrakantbambarde" target="_blank">LinkedIn</a>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item fade-up">
                         <div class="icon-circle">
-                            <img src="icon/Github.png" alt="Gmail">
+                            <img src="icon/Github.png" alt="GitHub">
                         </div>
-                        <div class="contact-label"></div>
                         <a href="https://github.com/chandrakantbambarde" target="_blank">GitHub</a>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item fade-up">
                         <div class="icon-circle">
-                            <img src="icon/phone.png" alt="Gmail">
+                            <img src="icon/phone.png" alt="Phone">
                         </div>
-                        <div class="contact-label"></div>
-                        <a href="tel:+917821906066">Phone </a>
+                        <a href="tel:+917821906066">+91 78219 06066</a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Chandrakant Bambarde</p>
-        <p>Built with ❤️</p>
+        <p>© 2026 <span>Chandrakant Bambarde</span></p>
+        <p>Designed & Built with <span>♥</span> · Java Full Stack Developer</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
